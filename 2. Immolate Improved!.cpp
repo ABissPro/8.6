@@ -17,7 +17,7 @@ int main()
     while (health > 0) {
         std::cout << "Введите мощность огненного шара: ";
         std::cin >> power;
-        float damage = power - resistance;
+        float damage = power - power * resistance;
         if (power < resistance) {
             damage = std::fabs(damage);
             damage = std::floor(damage);
